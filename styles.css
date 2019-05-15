@@ -1,12 +1,12 @@
 html,
 body {
-  background-image: url(assets/131230.jpg);
+  background-image: url(assets/image.jpg);
 }
 
 .nav {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
+position: fixed;
+background-color: black;
+z-index: 99;
 }
 
 a {
@@ -31,7 +31,12 @@ a {
 }
 
 .card-group {
+  padding-top: 60px;
+}
 
+.card {
+  margin-left: 80px;
+  margin-right: 80px;
 }
 
 .display-4 {
@@ -40,7 +45,7 @@ a {
 }
 
 .picture {
-  margin-left: 10px;
+  margin-left: 20px;
 }
 
 .lead {
@@ -53,4 +58,24 @@ a {
   border-top: solid grey 1px;
   text-align: right;
   margin-right: 20px;
+}
+
+#contact {
+  color: white;
+  padding-top: 60px;
+  padding-left: 20px;
+  height: 100vh;
+}
+
+.check {
+  margin-left: 10px;
+}
+
+.box {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.hidden {
+  display: none;
 }

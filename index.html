@@ -8,69 +8,108 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel='stylesheet' href='styles.css'>
-    <title>Hello, world!</title>
+    <title>Brad Wilkinson</title>
   </head>
   <body>
-    <ul class="container nav">
+    <ul class="container-fluid nav d-flex justify-content-center">
       <li class="nav-item">
-        <a class="nav-link active" href="#">about</a>
+        <a class="nav-link active" id='aboutButton' href="#about">about</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">work</a>
+        <a class="nav-link" id='workButton' href="#work">work</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">contact</a>
+        <a class="nav-link" id='contactButton' href="#contact">contact</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">resume</a>
+        <a class="nav-link" id='resumeButton' href="#resume">resume</a>
       </li>
     </ul>
-    <div class='jumbo'>
+    <div class='jumbo' id='about'>
       <div class="jumbotron container d-flex align-items-center justify-content-center">
 
         <div class='aboutText'>
         <h1 class='display-4'>brad wilkinson</h1>
         <p class="lead">web developer in phoenix arizona</p>
         <p class='skills'>javascript | html | css | bootstrap | firebase | bad karaoke singing</p>
-        <a class="btn btn-success btn-lg" href="#" role="button">Let's talk about your project</a>
+        <a class="btn btn-success btn-lg" href="#contact" role="button" id='projectButton'>Let's talk about your project</a>
         </div>
         <div class='picture'>
         <img src="assets/Webp.net-resizeimage.jpg" class="rounded float-right" alt="Brad">
         </div>
       </div>
     </div>
+    <div class="card-group container" id='work'>
+      <div class="card">
+        <img src="assets/cactus.png" class="card-img-top" alt="pixelated cactus">
+        <div class="card-body">
+          <h5 class="card-title">Pixel Art</h5>
+          <p class="card-text">Use this site to create your own original pixelated art pieces.  Suck it Andy Warhol!</p>
+          <a class="btn btn-success btn-lg" href="#" role="button">Try it out!</a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="assets/farm.jpeg" class="card-img-top" alt="farm">
+        <div class="card-body">
+          <h5 class="card-title">Farmers Only</h5>
+          <p class="card-text">Are you sick of city-folks tryna date you?  Better try farmersonly.com to get yins a red one.</p>
+          <a class="btn btn-success btn-lg" href="#" role="button">Try it out!</a>
+          </div>
+      </div>
+      <div class="card">
+        <img src="assets/amazon.ico" class="card-img-top" alt="amazon logo">
+        <div class="card-body">
+          <h5 class="card-title">Amazon.com</h5>
+          <p class="card-text">If you have money, but you don't want to have money anymore, check out this great marketplace!</p>
+          <a class="btn btn-success btn-lg" href="#" role="button">Try it out!</a>
+          </div>
+      </div>
+    </div>
     <div class="card-group container">
-  <div class="card">
-    <img src="assets/cactus.png" class="card-img-top" alt="pixelated cactus">
-    <div class="card-body">
-      <h5 class="card-title">Pixel Art</h5>
-      <p class="card-text">Use this site to create your own original pixelated art pieces.  Suck it Andy Warhol!</p>
-      <a class="btn btn-success btn-lg" href="#" role="button">Try it out!</a>
+      <div class="card">
+        <img src="assets/beach.jpeg" class="card-img-top" alt="Beach from Satellite">
+        <div class="card-body">
+          <h5 class="card-title">Beach Parking</h5>
+          <p class="card-text">Don't circle the parking lot waiting for someone to leave! Reserve your parking online and get out there in the surf!</p>
+          <a class="btn btn-success btn-lg" href="#" role="button">Try it out!</a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="assets/galvanize.png" class="card-img-top" alt="Galvanize Logo">
+        <div class="card-body">
+          <h5 class="card-title">Galvanize</h5>
+          <p class="card-text">If you're looking for a school with beer, this might be the one for you!  Learn all the things, and drink a beer!</p>
+          <a class="btn btn-success btn-lg" href="#" role="button">Try it out!</a>
+          </div>
+      </div>
+      <div class="card">
+        <img src="assets/jeep.png" class="card-img-top" alt="Jeep">
+        <div class="card-body">
+          <h5 class="card-title">JeepAZ</h5>
+          <p class="card-text">What better place to drive a Jeep than somewhere that is doesn't rain very much?!  Join all your Jeep friends for meetups and tips!</p>
+          <a class="btn btn-success btn-lg" href="#" role="button">Try it out!</a>
+        </div>
+      </div>
     </div>
-  </div>
-  <div class="card">
-    <img src="assets/cow.jpg" class="card-img-top" alt="cow">
-    <div class="card-body">
-      <h5 class="card-title">Farmers Only</h5>
-      <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+    <div class='container contact d-flex justify-content-center' id='contact'>
+      <form>
+        <h1>contact me</h1><br>
+        email address<br>
+        <input class='box' type='email'required><br>
+        I need a website<input type='checkbox' class='check'><br>
+        I'm looking to hire<input type='checkbox' class='check'><br>
+        Tell me about your project!<br>
+        <textarea class='box' name="paragraph_text" cols="100" rows="10"></textarea><br>
+        <button type='submit' id='submitButton'>submit</button>
     </div>
-  </div>
-  <div class="card">
-    <img src="assets/amazon.ico" class="card-img-top" alt="amazon logo">
-    <div class="card-body">
-      <h5 class="card-title">Amazon.com</h5>
-      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+    <div class='d-flex justify-content-center' id='resume'>
+      <img class='hidden' src='assets/Screen Shot 2019-05-10 at 8.05.53 PM.png' id='resumeImg' alt='resume'>
     </div>
-  </div>
-</div>
-
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <script src='script.js'>
+    <script src='script.js'></script>
   </body>
 </html>
