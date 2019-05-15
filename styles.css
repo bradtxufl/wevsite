@@ -1,0 +1,61 @@
+html,
+body {
+  background-image: url(assets/131230.jpg);
+}
+
+.nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+a {
+  color: white;
+  font-size: 1.5rem;
+}
+
+.active {
+  background-color: green;
+}
+
+.jumbotron {
+  background: none;
+  height: 100%;
+  color: white;
+}
+
+.jumbo {
+  background: rgba(255,255,255,.3);
+  opacity: 1;
+  height: 100vh;
+}
+
+.card-group {
+
+}
+
+.display-4 {
+  text-align: right;
+  margin-right: 10px;
+}
+
+.picture {
+  margin-left: 10px;
+}
+
+.lead {
+  text-align: right;
+  margin-right: 10px;
+}
+
+.my-4 {
+  margin-right: 10px;
+  text-align: right;
+}
+
+.skills {
+  padding-top: 15px;
+  border-top: solid grey 1px;
+  text-align: right;
+  margin-right: 10px;
+}
